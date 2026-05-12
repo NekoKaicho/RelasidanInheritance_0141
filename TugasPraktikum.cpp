@@ -10,3 +10,7 @@ protected:
     string nama;
     string email;
 
+    user(string pNama, string pEmail) : nama(pNama), email(pEmail) {
+        id = generateId();
+    }
+
