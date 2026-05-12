@@ -21,4 +21,12 @@ protected:
 
     virtual ~user() {}  // fix 1: virtual destructor
 };
-
+int user::globalId = 0;
+ 
+class member : public user {
+public:
+    bool status;
+ 
+    member(string pNama, string pEmail) : user(pNama, pEmail), status(true) {
+        cout << "Member \"" << nama << "\" dibuat (ID: " << id << ")\n";
+    }
