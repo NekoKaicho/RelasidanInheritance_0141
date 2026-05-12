@@ -19,3 +19,6 @@ protected:
         return globalId;
     }
 
+    virtual ~user() {}  // fix 1: virtual destructor
+};
+
