@@ -59,3 +59,7 @@ public:
              << (pMember->status ? "Aktif" : "Non-Aktif") << "\n";
     }
 };
+
+int main() {
+    admin* varAdmin = new admin("Heyden", "admin.heyden@gmail.com");
+    cout << endl;
