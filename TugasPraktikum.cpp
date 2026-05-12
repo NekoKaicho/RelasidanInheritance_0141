@@ -63,3 +63,7 @@ public:
 int main() {
     admin* varAdmin = new admin("Heyden", "admin.heyden@gmail.com");
     cout << endl;
+
+    member* m1 = new member("Saya", "saya@gmail.com");
+    member* m2 = new member("Siyi", "siyi@gmail.com");
+    member* m3 = new member("Soyo", "soyo@gmail.com");
