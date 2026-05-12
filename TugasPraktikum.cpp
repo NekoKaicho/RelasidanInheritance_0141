@@ -14,3 +14,8 @@ protected:
         id = generateId();
     }
 
+      int generateId() {
+        globalId++;
+        return globalId;
+    }
+
