@@ -81,3 +81,6 @@ int main() {
     delete m1;
     delete m2;
     delete m3;
+
+    return 0;
+}
