@@ -52,3 +52,10 @@ public:
             m->showProfile();
         }
     }
+
+    void toggleActivationMember(member* pMember) {
+        pMember->status = !pMember->status;
+        cout << "\n[!] Status member \"" << pMember->nama << "\" diubah menjadi: "
+             << (pMember->status ? "Aktif" : "Non-Aktif") << "\n";
+    }
+};
