@@ -45,3 +45,10 @@ public:
     admin(string pNama, string pEmail) : user(pNama, pEmail) {
         cout << "Admin \"" << nama << "\" dibuat (ID: " << id << ")\n";
     }
+
+    void showAllMember(const vector<member*>& daftar_member) {  // fix 2: const reference
+        cout << "\n=== DAFTAR SEMUA MEMBER ===\n";
+        for (auto* m : daftar_member) {  // fix 3: range-based for
+            m->showProfile();
+        }
+    }
