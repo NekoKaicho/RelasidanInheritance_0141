@@ -72,3 +72,7 @@ int main() {
     daftar_member.push_back(m1);
     daftar_member.push_back(m2);
     daftar_member.push_back(m3);
+
+    varAdmin->showAllMember(daftar_member);
+    varAdmin->toggleActivationMember(m2);
+    varAdmin->showAllMember(daftar_member);
