@@ -3,13 +3,15 @@
 #include <string>
 using namespace std;
 
-class User {
+class user {
 protected:
     static int globalId;
     int id;
     string nama;
     string email;
 
+public:
+    string getNama() { return nama; }
     user(string pNama, string pEmail) : nama(pNama), email(pEmail) {
         id = generateId();
     }
@@ -55,7 +57,7 @@ public:
 
     void toggleActivationMember(member* pMember) {
         pMember->status = !pMember->status;
-        cout << "\n[!] Status member \"" << pMember->nama << "\" diubah menjadi: "
+        cout << "\n[!] Status member \"" << pMember->getNama() << "\" diubah menjadi: "
              << (pMember->status ? "Aktif" : "Non-Aktif") << "\n";
     }
 };
