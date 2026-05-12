@@ -1,5 +1,7 @@
 #ifndef ANAK_H
 #define ANAK_H
+#include <iostream>
+using namespace std;
 
 class anak {
 public:
@@ -8,7 +10,7 @@ public:
         cout << "Anak \"" << nama << "\" ada\n";
     }
     ~anak() {
-        COUT << "Anak \"" << nama << "\" tidak ada\n";
+        cout << "Anak \"" << nama << "\" tidak ada\n";
     }
 };
 #endif
