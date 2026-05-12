@@ -67,3 +67,8 @@ int main() {
     member* m1 = new member("Saya", "saya@gmail.com");
     member* m2 = new member("Siyi", "siyi@gmail.com");
     member* m3 = new member("Soyo", "soyo@gmail.com");
+
+    vector<member*> daftar_member;
+    daftar_member.push_back(m1);
+    daftar_member.push_back(m2);
+    daftar_member.push_back(m3);
