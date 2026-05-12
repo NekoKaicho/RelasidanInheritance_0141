@@ -30,3 +30,12 @@ public:
     member(string pNama, string pEmail) : user(pNama, pEmail), status(true) {
         cout << "Member \"" << nama << "\" dibuat (ID: " << id << ")\n";
     }
+
+    void showProfile() {
+        cout << "ID     : " << id << "\n";
+        cout << "Nama   : " << nama << "\n";
+        cout << "Email  : " << email << "\n";
+        cout << "Status : " << (status ? "Aktif" : "Non-Aktif") << "\n";
+        cout << "-----------------------\n";
+    }
+};
