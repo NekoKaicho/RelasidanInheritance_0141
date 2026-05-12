@@ -39,3 +39,9 @@ public:
         cout << "-----------------------\n";
     }
 };
+
+class admin : public user {
+public:
+    admin(string pNama, string pEmail) : user(pNama, pEmail) {
+        cout << "Admin \"" << nama << "\" dibuat (ID: " << id << ")\n";
+    }
