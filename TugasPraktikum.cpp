@@ -76,3 +76,8 @@ int main() {
     varAdmin->showAllMember(daftar_member);
     varAdmin->toggleActivationMember(m2);
     varAdmin->showAllMember(daftar_member);
+
+    delete varAdmin;
+    delete m1;
+    delete m2;
+    delete m3;
